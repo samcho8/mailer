@@ -34,7 +34,9 @@ Requesting Data:
   
     "subject": "Example Call to my microservice",
   
-    "text": "This is the body of the POST request"
+    "text": "This is the body of the POST request",
+    
+    "scheduledDate": "2022-11-03T00:00:00Z"
   
   }
   
