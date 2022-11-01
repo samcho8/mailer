@@ -23,14 +23,23 @@ Requesting Data:
   An example call:
   
   POST localhost:5000/send-mail.
-  Body: 
+  
+  Body:
+  
   {
+  
     "from": "Sung Cho <chosung@oregonstate.edu>",
+  
     "to": "samcho8@gmail.com",
+  
     "subject": "Example Call to my microservice",
+  
     "text": "This is the body of the POST request"
+  
   }
+  
 Receiving the data:
+  
   You will receive a message back from the server telling you that it sent an email from the source to the destination email.
   Wait until the date that you specified to get the email from the mailer.
 
