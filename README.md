@@ -6,13 +6,19 @@ Requesting Data:
   If PORT is unchanged, send a POST request to localhost:5000/send-mail with the following JSON body data. 
   
   from: Name <email>
+  
   to: Destination email
+  
   subject: title of email
+  
   text: body of email
-  htmlOptional: Optionally, embed text in html
+  
+  htmlOptional: Optionally, embed text in html.
+  
   scheduledDate: Date you want the email to be sent in. You want this to be in the UTC timezone, and in this following format: YYYY-MM-DD'T'H:M:S'Z',
   with YYYY being the year, MM being the month, DD being the day, H being hours, M being minutes, and S being seconds. 
-  letters in quotes are to be sent literally without the quotes
+  letters in quotes are to be sent literally without the quotes. Sample date to be sent. If you wanted to send an email at November 3rd, at midnight on UTC,
+  this would be 2022-11-03T00:00:00Z.
 
   You will receive a message back from the server telling you that it sent an email from the source to the destination email.
   Wait until the date that you specified to get the email from the mailer.
